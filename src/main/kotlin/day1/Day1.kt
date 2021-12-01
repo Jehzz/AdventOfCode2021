@@ -2,7 +2,7 @@ package day1
 
 import java.io.File
 
-fun main() {    // WHY IS THIS RETURNING ONE LESS THAN THE EXPECTED 1316?
+fun main() {
     println("Running Day 1 challenge")
     val inputFile = File("src/main/kotlin/day1/Day1Input.txt")
 
