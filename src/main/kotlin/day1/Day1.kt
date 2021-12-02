@@ -20,7 +20,7 @@ fun calculateIncreases(file: File): Int {
     for (line in 0 until lines.size-1) {
         a = lines[line].toInt()
         b = lines[line+1].toInt()
-        if ( b > a )  counter++
+        if ( b > a ) counter++
     }
     return counter
 }
@@ -28,16 +28,12 @@ fun calculateIncreases(file: File): Int {
 fun calculateThreeWindowIncreases(file: File): Int {
     var counter = 0
     var a: Int
-    var b: Int
-    var c: Int
     var d: Int
     val lines = file.readLines()
     for (line in 0 until lines.size-3) {
         a = lines[line].toInt()
-        b = lines[line+1].toInt()
-        c = lines[line+2].toInt()
         d = lines[line+3].toInt()
-        if ( b+c+d > a+b+c ) counter++
+        if ( d > a ) counter++
     }
     return counter
 }
